@@ -1,6 +1,4 @@
-const h1 = document.querySelector('h1');
-h1.addEventListener('click', () => h1.style.color = 'red');
-
+// toggling nav icons
 var blueBorderBalance = document.querySelector('.assets');
 var blueBorderWallet = document.querySelector('.transactions');
 var blueBorderPerson = document.querySelector('.profile');
@@ -22,3 +20,22 @@ blueBorderPerson.addEventListener('click', function () {
   blueBorderWallet.style.border = '0px';
   blueBorderPerson.style.borderLeft = '5px #1CA3BA solid';
 });
+
+//closing blue message box
+var welcomeMessage = document.querySelector('.welcome-message');
+var close = document.querySelector('.img-close');
+
+close.addEventListener('click', () => welcomeMessage.style.display = 'none');
+
+
+
+
+
+
+
+
+
+
+//test: changes heahing color
+//const h1 = document.querySelector('h1');
+//h1.addEventListener('click', () => h1.style.color = 'red');
