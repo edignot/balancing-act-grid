@@ -27,7 +27,9 @@ header {
 .welcome-message,
 .account-balance-box,
 .main-container-right,
-.account-list {
+.account-list,
+.transaction-table,
+.form-container {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
@@ -88,7 +90,8 @@ nav {
 /* --------------------------------------------------- */
 /* main */
 /* --------------------------------------------------- */
-main {
+main,
+aside {
   display: grid;
   grid-gap: 30px;
   margin: 30px;
@@ -138,6 +141,7 @@ main {
 
 .account-balance-box>h3 {
   font-size: .7rem;
+  text-transform: uppercase;
 }
 
 /* manage account */
@@ -173,7 +177,8 @@ main {
 /* --------------------------------------------------- */
 /* main right */
 /* --------------------------------------------------- */
-.main-container-right {
+.main-container-right,
+.transaction-table {
   background-color: white;
   padding: 25px;
 }
@@ -197,9 +202,37 @@ tr {
 }
 
 /* --------------------------------------------------- */
-/* JavaScript events */
+/* wallet page */
 /* --------------------------------------------------- */
 
+/* nav */
 .open {
   border-left: 6px solid #1CA3BA;
+}
+
+/* toggle dashboard and wallet */
+.transaction-table-left {
+  display: none;
+}
+
+/* form */
+.form-container {
+  background: white;
+  display: none;
+  padding: 20px 50px;
+  width: 40%;
+  margin: auto;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
 }

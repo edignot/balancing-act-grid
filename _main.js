@@ -9,25 +9,33 @@ var blueBorderBalance = document.querySelector('.assets');
 var blueBorderWallet = document.querySelector('.transactions');
 var blueBorderPerson = document.querySelector('.profile');
 var mainContent = document.querySelector('main');
+var transactionTableLeft = document.querySelector('.transaction-table-left');
+var form = document.querySelector('.form-container');
 
-blueBorderWallet.addEventListener('click', function () {
+blueBorderWallet.addEventListener('click', function() {
   blueBorderBalance.style.border = '0px';
   blueBorderPerson.style.border = '0px';
   blueBorderWallet.style.borderLeft = '5px #1CA3BA solid';
   mainContent.style.display = 'none';
+  transactionTableLeft.style.display = 'grid';
+  form.style.display = 'grid';
 });
 
-blueBorderBalance.addEventListener('click', function () {
+blueBorderBalance.addEventListener('click', function() {
   blueBorderWallet.style.border = '0px';
   blueBorderPerson.style.border = '0px';
   blueBorderBalance.style.borderLeft = '5px #1CA3BA solid';
   mainContent.style.display = 'grid';
+  transactionTableLeft.style.display = 'none';
+  form.style.display = 'none';
 });
 
-blueBorderPerson.addEventListener('click', function () {
+blueBorderPerson.addEventListener('click', function() {
   blueBorderBalance.style.border = '0px';
   blueBorderWallet.style.border = '0px';
   blueBorderPerson.style.borderLeft = '5px #1CA3BA solid';
+  transactionTableLeft.style.display = 'none';
+  form.style.display = 'none';
 });
 
 
@@ -36,11 +44,6 @@ blueBorderPerson.addEventListener('click', function () {
 
 
 
-
-
-
-
-//
 
 //test: change color of each table row
 const tableRow = document.querySelectorAll('tr');
