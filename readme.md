@@ -5,3 +5,8 @@ This was a solo project during Module 1 at [Turing School of Software & Design](
 
 ![1](/balancing1.png)
 ![1](/balancing2.png)
+
+### Technologies Used: 
+- HTML
+- CSS
+- JavaScript
